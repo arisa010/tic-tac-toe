@@ -1,0 +1,28 @@
+tic tac toe
+two players -  x and o
+on a 3 x 3  grid 
+if player gets 3 x or o, the player wins the game ends and starts again
+
+  o |   |
+-------------
+    | o | x
+-------------
+    |   | o
+
+on a 3 x 3 grid
+
+when the user clicks any box,  a "x" appears 
+
+right after the next turn when a box is clicked a "o" will appear
+
+this in intervals until 3 "x" or "o" appears 
+
+    which a line crosses the 3 "x" or "o"
+
+    game ends
+
+or  the grid is filled - a draw 
+    game ends
+
+
+
