@@ -8,24 +8,23 @@ var div6 = document.querySelector("#div6");
 var div7 = document.querySelector("#div7");
 var div8 = document.querySelector("#div8");
 var div9 = document.querySelector("#div9");
-    
-// divs.addEventListener("click", function(event){
-//     var boxClicked = event.target;
-//     // var cross = document.createElement("cross");
-//     // cross.text = "x";
-//     div1.classList.add("cross");
-    
-    
-       
-//         // boxClicked.textContent = ""
-      
-// })
+var whoseTurn = 'X'
 
-div1.addEventListener("click", function() {
-    div1.className = "cross"
-    div1.classList.add("cross")
-    
+divs.addEventListener("click", function(event){
+
+    var boxClicked = event.target;
+ 
+    if(boxClicked.textContent == '' && whoseTurn == 'X'){
+        boxClicked.textContent = "x";
+        whoseTurn = 'Y'
+       
+     }else{
+        boxClicked.textContent = "o";
+        whoseTurn = 'X'
+       
+     }    
 })
+
 
     // div1.addEventListener("click", function() {
     //     // div.style.backgroundColor = "red";
