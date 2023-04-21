@@ -13,9 +13,7 @@ var div9 = document.querySelector("#div9");
         // div.style.backgroundColor = "red";
         div1.className ="red-background";
         
-        // if (div2 === "red-background" && div3 === "red-background" ){
-        //     divs.className = "green-background";
-        // }
+       
         if (div2.classname === "red-background" && div3.classname === "red-background" ){
             div1.classList.remove("red-background")
             div1.classList.add("green-background")
@@ -23,13 +21,13 @@ var div9 = document.querySelector("#div9");
             div2.classList.add("green-background")
             div3.classList.remove("red-background")
             div3.classList.add("green-background")
-        }else if(div4.classname === "red-background" && div6.classname === "red-background"){
+        }else if(div5.classname === "red-background" && div7.classname === "red-background"){
             div1.classList.remove("red-background")
             div1.classList.add("green-background")
-            div4.classList.remove("red-background")
-            div4.classList.add("green-background")
-            div6.classList.remove("red-background")
-            div6.classList.add("green-background")
+            div5.classList.remove("red-background")
+            div5.classList.add("green-background")
+            div7.classList.remove("red-background")
+            div7.classList.add("green-background")
         }else if(div4.classname === "red-background" && div7.classname === "red-background")
             div1.classList.remove("red-background")
             div1.classList.add("green-background")
@@ -53,7 +51,7 @@ var div9 = document.querySelector("#div9");
             div2.classList.add("green-background")
             div3.classList.remove("red-background")
             div3.classList.add("green-background")
-        }else if(div5.className === "red-background" && div8.className === "redbackground"){
+        }else if(div5.className === "red-background" && div8.className === "red-background"){
             div1.classList.remove("red-background")
             div1.classList.add("green-background")
             div5.classList.remove("red-background")
@@ -99,27 +97,20 @@ var div9 = document.querySelector("#div9");
         // div.style.backgroundColor = "red";
         div4.className ="red-background";
         
-        if (div5.classname === "red-background" && div6.classname === "red-background" ){
+        if (div5.className === "red-background" && div6.className === "red-background" ){
             div4.classList.remove("red-background")
             div4.classList.add("green-background")
             div5.classList.remove("red-background")
             div5.classList.add("green-background")
             div6.classList.remove("red-background")
             div6.classList.add("green-background")
-        }else if(div1.className === "red-ground" && div7.className === "red-background"){
+        }else if(div1.className === "red-background" && div7.className === "red-background"){
             div4.classList.remove("red-background")
             div4.classList.add("green-background")
             div1.classList.remove("red-background")
             div1.classList.add("green-background")
             div7.classList.remove("red-background")
             div7.classList.add("green-background")
-        }else if(div5.className === "red-ground" && div6.className === "red-background"){
-            div4.classList.remove("red-background")
-            div4.classList.add("green-background")
-            div5.classList.remove("red-background")
-            div5.classList.add("green-background")
-            div6.classList.remove("red-background")
-            div6.classList.add("green-background")
         }
 
         //dom object turns into red
