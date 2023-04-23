@@ -4,23 +4,37 @@
     grid-template-columns: 200px 200px 200px;
 }
 
+header{
+    display: flex;
+}
 body{
     padding-top: 10%;
     display: flex;
     justify-content: center;
+    color: rgb(138, 0, 55);
+    font-family: 'arial';
+    font-size: 50px;
 }
 
 div{
-    background: burlywood;
+    background: rgb(255, 244, 229);
     height: 200px;
     width: 200px;
-    border: 1px solid black;
+    border: 10px solid white;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: black;
+    color: rgb(0, 63, 130);
+    font-size: 100px;
 }
 
+
+.board{
+    
+    
+    font-family: 'arial';
+    /* font-size: 100px; */
+}
 /* .green-background{
     background-color: green;
 }

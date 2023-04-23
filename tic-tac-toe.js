@@ -9,10 +9,15 @@ var div7 = document.querySelector("#div7");
 var div8 = document.querySelector("#div8");
 var div9 = document.querySelector("#div9");
 var whoseTurn = 'X'
+// var whoseTurn = ""
+// var player1 = "X";
+// var player2 = "Y";
+
+
+
 var winMessage = document.querySelector(".win-message");
-// var all = [div1, div2, div3,
-//            div4, div5, div6,
-//            div7, div8, div9]
+var drawMessage = document.querySelector(".draw-message");
+
 divs.addEventListener("click", function(event){
 
     var boxClicked = event.target;
@@ -35,6 +40,7 @@ divs.addEventListener("click", function(event){
             winMessage.textContent = "YOU WIN!"
         }else if(boxClicked.textContent === div2.textContent && boxClicked.textContent === div5.textContent && boxClicked.textContent === div8.textContent){
             winMessage.textContent = "YOU WIN!"
+            
         }else if(boxClicked.textContent === div3.textContent && boxClicked.textContent === div6.textContent && boxClicked.textContent === div9.textContent){
             winMessage.textContent = "YOU WIN!"
         }else if(boxClicked.textContent === div4.textContent && boxClicked.textContent === div5.textContent && boxClicked.textContent === div6.textContent){
@@ -68,14 +74,16 @@ divs.addEventListener("click", function(event){
         winMessage.textContent = "YOU WIN!"
         }else if(boxClicked.textContent === div3.textContent && boxClicked.textContent === div5.textContent && boxClicked.textContent === div7.textContent){
         winMessage.textContent = "YOU WIN!"
-    }
-     }    
+        }
+    }else if(whoseTurn ==="Y" || whoseTurn ==="X" && boxClicked.textContent === board.textContent){
+        drawMessage.textContent = "IT'S A DRAW!"
+    }  
 })
 
+//function boardReset() {
+  //function to reset?
 
-    // div1.addEventListener("click", function() {
-    //     // div.style.backgroundColor = "red";
-    //     div1.className ="red-background";
+
         
        
     //     if (div2.className === "red-background" && div3.className === "red-background" ){
