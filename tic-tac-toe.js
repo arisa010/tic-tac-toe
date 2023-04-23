@@ -31,24 +31,24 @@ divs.addEventListener("click", function(event){
         if (boxClicked.textContent === div1.textContent && boxClicked.textContent === div2.textContent && boxClicked.textContent === div3.textContent){
            
             
-            winMessage.textContent = "YOU WIN!"
+            winMessage.textContent = "X WINS!"
            
             
         }else if(boxClicked.textContent === div1.textContent && boxClicked.textContent === div5.textContent && boxClicked.textContent === div9.textContent){
-            winMessage.textContent = "YOU WIN!"
+            winMessage.textContent = "X WINS!"
         }else if(boxClicked.textContent === div1.textContent && boxClicked.textContent === div4.textContent && boxClicked.textContent === div7.textContent){
-            winMessage.textContent = "YOU WIN!"
+            winMessage.textContent = "X WINS!"
         }else if(boxClicked.textContent === div2.textContent && boxClicked.textContent === div5.textContent && boxClicked.textContent === div8.textContent){
-            winMessage.textContent = "YOU WIN!"
+            winMessage.textContent = "X WINS!"
             
         }else if(boxClicked.textContent === div3.textContent && boxClicked.textContent === div6.textContent && boxClicked.textContent === div9.textContent){
-            winMessage.textContent = "YOU WIN!"
+            winMessage.textContent = "X WINS!"
         }else if(boxClicked.textContent === div4.textContent && boxClicked.textContent === div5.textContent && boxClicked.textContent === div6.textContent){
-            winMessage.textContent = "YOU WIN!"
+            winMessage.textContent = "X WINS!"
         }else if(boxClicked.textContent === div7.textContent && boxClicked.textContent === div8.textContent && boxClicked.textContent === div9.textContent){
-            winMessage.textContent = "YOU WIN!"
+            winMessage.textContent = "X WINS!"
         }else if(boxClicked.textContent === div3.textContent && boxClicked.textContent === div5.textContent && boxClicked.textContent === div7.textContent){
-            winMessage.textContent = "YOU WIN!"
+            winMessage.textContent = "X WINS!"
         }
     }else if(boxClicked.textContent == "" && whoseTurn !="X"){ 
         boxClicked.textContent = "o";
@@ -57,23 +57,23 @@ divs.addEventListener("click", function(event){
        if (boxClicked.textContent === div1.textContent && boxClicked.textContent === div2.textContent && boxClicked.textContent === div3.textContent){
            
             
-        winMessage.textContent = "YOU WIN!"
+        winMessage.textContent = "O WINS!"
        
         
          }else if(boxClicked.textContent === div1.textContent && boxClicked.textContent === div5.textContent && boxClicked.textContent === div9.textContent){
-        winMessage.textContent = "YOU WIN!"
+        winMessage.textContent = "O WINS!"
         }else if(boxClicked.textContent === div1.textContent && boxClicked.textContent === div4.textContent && boxClicked.textContent === div7.textContent){
-        winMessage.textContent = "YOU WIN!"
+        winMessage.textContent = "O WINS!"
         }else if(boxClicked.textContent === div2.textContent && boxClicked.textContent === div5.textContent && boxClicked.textContent === div8.textContent){
-        winMessage.textContent = "YOU WIN!"
+        winMessage.textContent = "O WINS!"
         }else if(boxClicked.textContent === div3.textContent && boxClicked.textContent === div6.textContent && boxClicked.textContent === div9.textContent){
-        winMessage.textContent = "YOU WIN!"
+        winMessage.textContent = "O WINS!"
         }else if(boxClicked.textContent === div4.textContent && boxClicked.textContent === div5.textContent && boxClicked.textContent === div6.textContent){
-        winMessage.textContent = "YOU WIN!"
+        winMessage.textContent = "O WINS!"
         }else if(boxClicked.textContent === div7.textContent && boxClicked.textContent === div8.textContent && boxClicked.textContent === div9.textContent){
-        winMessage.textContent = "YOU WIN!"
+        winMessage.textContent = "O WINS!"
         }else if(boxClicked.textContent === div3.textContent && boxClicked.textContent === div5.textContent && boxClicked.textContent === div7.textContent){
-        winMessage.textContent = "YOU WIN!"
+        winMessage.textContent = "O WINS!"
         }
     }else if(whoseTurn ==="Y" || whoseTurn ==="X" && boxClicked.textContent === board.textContent){
         drawMessage.textContent = "IT'S A DRAW!"
