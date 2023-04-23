@@ -1,4 +1,4 @@
-var divs = document.querySelectorAll(".board")
+var divs = document.querySelector(".board")//because it has a class so dont use selectorall?
 var div1 = document.querySelector("#div1");
 var div2 = document.querySelector("#div2");
 var div3 = document.querySelector("#div3");
@@ -9,7 +9,10 @@ var div7 = document.querySelector("#div7");
 var div8 = document.querySelector("#div8");
 var div9 = document.querySelector("#div9");
 var whoseTurn = 'X'
-
+var winMessage = document.querySelector(".win-message");
+// var all = [div1, div2, div3,
+//            div4, div5, div6,
+//            div7, div8, div9]
 divs.addEventListener("click", function(event){
 
     var boxClicked = event.target;
@@ -17,11 +20,20 @@ divs.addEventListener("click", function(event){
     if(boxClicked.textContent == '' && whoseTurn == 'X'){
         boxClicked.textContent = "x";
         whoseTurn = 'Y'
-       
-     }else{
+//
+        //nested if else statement
+        console.log(boxClicked.textContent)
+        if (boxClicked.textContent === div1.textContent && boxClicked.textContent === div2.textContent && boxClicked.textContent === div3.textContent){
+           
+            
+            winMessage.textContent = "YOU WIN!"
+           
+            
+        }
+    }else if(boxClicked.textContent == "" && whoseTurn !="X"){ 
         boxClicked.textContent = "o";
         whoseTurn = 'X'
-       
+       //nested if else statement checking conditionds for wins
      }    
 })
 
