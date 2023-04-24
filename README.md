@@ -4,6 +4,7 @@ The briefest description of my cool project and why you should all use it.
 ## :computer: [Click here](https://arisa010.github.io/tic-tac-toe/) to see my live project!
 
 ## :page_facing_up: About
+Tic-tac-tie game
 - The game starts right after the link is opened
 
 ## :pencil2: Planning & Problem Solving
@@ -21,8 +22,7 @@ on a (3 x 3)  grid
 
 
 
-- Add screenshots/drawings of doodles/plans during the planning phase.
-- Flow charts of app logic.
+
 
 ![Alt text](https://images.squarespace-cdn.com/content/v1/611749464f11da6019f678ea/1654657220337-8926AHHZX33VN18KJ16F/32D6717F-1067-4D9F-B447-A7C57CBC8753.jpg?format%3D750w)
 ## :rocket: Cool tech
@@ -33,8 +33,7 @@ on a (3 x 3)  grid
 
 ## :scream: Bugs to fix :poop:
 - After the grid id filled i need to double click to be able to aleart the "its a draw" message.
-- Anything a LOT broken
-- Buttons to not click too many times (cause its broken :unamused:)
+-
 
 ## :sob: Lessons learnt
 if I could wind back the clock i would focus on logic and the bigger picture of the game and later spend time on getting small things working.
