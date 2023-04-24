@@ -12,7 +12,7 @@ var whoseTurn = 'X'
 // var whoseTurn = ""
 // var player1 = "X";
 // var player2 = "Y";
-
+var counter = 0;
 var winMessage = document.querySelector(".win-message");
 var drawMessage = document.querySelector(".draw-message");
 
@@ -23,34 +23,44 @@ divs.addEventListener("click", function(event){
     if(boxClicked.textContent == '' && whoseTurn == 'X'){
         boxClicked.textContent = "x";
         whoseTurn = 'Y'
-//
+        counter++;
+        
         //nested if else statement
-        console.log(boxClicked.textContent)
+        console.log(counter)
         if (boxClicked.textContent === div1.textContent && boxClicked.textContent === div2.textContent && boxClicked.textContent === div3.textContent){
-           
             
             winMessage.textContent = "X WINS!"
-          // divs.reset();
             
         }else if(boxClicked.textContent === div1.textContent && boxClicked.textContent === div5.textContent && boxClicked.textContent === div9.textContent){
+            
             winMessage.textContent = "X WINS!"
         }else if(boxClicked.textContent === div1.textContent && boxClicked.textContent === div4.textContent && boxClicked.textContent === div7.textContent){
+            
             winMessage.textContent = "X WINS!"
         }else if(boxClicked.textContent === div2.textContent && boxClicked.textContent === div5.textContent && boxClicked.textContent === div8.textContent){
+            
             winMessage.textContent = "X WINS!"
             
         }else if(boxClicked.textContent === div3.textContent && boxClicked.textContent === div6.textContent && boxClicked.textContent === div9.textContent){
+            
             winMessage.textContent = "X WINS!"
         }else if(boxClicked.textContent === div4.textContent && boxClicked.textContent === div5.textContent && boxClicked.textContent === div6.textContent){
+            
             winMessage.textContent = "X WINS!"
         }else if(boxClicked.textContent === div7.textContent && boxClicked.textContent === div8.textContent && boxClicked.textContent === div9.textContent){
+            
             winMessage.textContent = "X WINS!"
         }else if(boxClicked.textContent === div3.textContent && boxClicked.textContent === div5.textContent && boxClicked.textContent === div7.textContent){
+            
+            console.log(counter)
             winMessage.textContent = "X WINS!"
+        }else if(counter === 9 ){
+            drawMessage.textContent = "IT'S A DRAW!"
         }
     }else if(boxClicked.textContent == "" && whoseTurn !="X"){ 
         boxClicked.textContent = "o";
         whoseTurn = 'X'
+        counter ++;
        //nested if else statement checking conditionds for wins
        if (boxClicked.textContent === div1.textContent && boxClicked.textContent === div2.textContent && boxClicked.textContent === div3.textContent){
            
@@ -72,8 +82,12 @@ divs.addEventListener("click", function(event){
         winMessage.textContent = "O WINS!"
         }else if(boxClicked.textContent === div3.textContent && boxClicked.textContent === div5.textContent && boxClicked.textContent === div7.textContent){
         winMessage.textContent = "O WINS!"
-        }
-    }else if(whoseTurn ==="Y" || whoseTurn ==="X" || boxClicked.textContent === board.textContent){
-        drawMessage.textContent = "IT'S A DRAW!"
-    }  
+        }else if(counter ==9){
+            drawMessage.textContent = "IT'S A DRAW!"
+            }
+    // }//else if (whoseTurn ==="Y" || whoseTurn ==="X" || boxClicked.textContent != ""){
+    // // // else if( whoseTurn ==="Y" || whoseTurn ==="X"|| boxClicked.textContent === board.textContent){
+    //     drawMessage.textContent = "IT'S A DRAW!"
+    }
+    
 })
