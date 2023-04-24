@@ -1,21 +1,15 @@
 # Tic Tac Toe
 The briefest description of my cool project and why you should all use it.
 
-## :computer: [Click here](#) to see my live project!
+## :computer: [Click here](https://arisa010.github.io/tic-tac-toe/) to see my live project!
 
 ## :page_facing_up: About
-- How to use my awesome project.
-- Download instructions (if relevant):
-```zsh
-$ git clone my-awesome-app
-$ cd my-awesome-app
-$ node app.js
-```
-- Add in-app screenshots.
+- The game starts right after the link is opened
 
 ## :pencil2: Planning & Problem Solving
-- when its "x" turn any box clicked "x" appears 
-- when its "o" turn any box clicked "o" appears 
+game logic
+- when it's "x" turn, any box clicked "x" appears 
+- when it's "o" turn, any box clicked "o" appears 
 - two players "x" & "o" switch in intervals after every click
 on a (3 x 3)  grid 
 - three outcomes
